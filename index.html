@@ -11,16 +11,31 @@
         <a-asset-item id="giraffe" src="./Assets/a-giraffe-figurine-send-a-hug-kiss-in-covid-19-1.snapshot.31/giraffe heart updated-O.obj"></a-asset-item>
         <a-asset-item id="boat" src="./Assets/Boat.obj"></a-asset-item>
         <a-asset-item id="wolf" src="./Assets/wolf/Wolf-Blender-2.82a.gltf"></a-assets-item>
+        <a-asset-item id="fish" src="./Assets/fish.obj"></a-assets-item>
+        <a-asset-item id="fish2" src="./Assets/fish2.obj"></a-assets-item>
+        <a-asset-item id="tree1" src="./Assets/lowpoly_tree.obj"></a-assets-item>
+        <a-asset-item id="tree2" src="./Assets/palm_tree.obj"></a-assets-item>
+
+
       </a-assets>
       
       <a-sky src="./Assets/07-Lab-EliGraham-Unreal-360-Lab.png"></a-sky>
-      <a-plane src="#boat"></a-plane>
+      <a-plane src="./Assets/illusion_floor.jpeg" rotation="-90 45 0" scale="7 7 0"></a-plane>
+          <!-- railing for floor -->
+      <a-box position="-2.288 0.2 2.247" rotation="0 45 0" color="white" scale="1 0.5 7"></a-box>
+      <a-box position="-1.652 .2 -2.642" rotation="0 45 0" color="white" scale="7 0.5 1"></a-box>
+      <a-box position="3.237 .2 -1.988" rotation="0 45 0" color="white" scale="1 0.5 7"></a-box>
+      <a-box position="2.6 .2 2.893" rotation="0 45 0" color="white" scale="7 0.5 1"></a-box>
+
+      <a-obj-model src="#boat" position="110 -50 -158" rotation="0 30 0" scale="25 25 25" material="shader:flat;src:./Assets/boat_texture.jpeg"></a-obj-model>
+      <a-obj-model src="#fish" position="22.25 85.3 -274" rotation="-90 30 0" scale="8 8 8" material="shader:flat;src:./Assets/fish_texture.jpg"></a-obj-model>
+      <a-obj-model src="#fish2" position="270 23 -109" rotation="-90 -130 0" scale="25 25 25" material="shader:flat;src:./Assets/fish2_texture.jpg"></a-obj-model>
 
       <a-obj-model src="#giraffe" position="200 15 200" rotation="0 -30 0"></a-obj-model>
-      <a-entity gltf-model="#wolf" position="-7 0 -6" scale="0 2 2" rotation="0 45 0"></a-entity>
+      <a-entity gltf-model="#wolf" position="-7 0 6" scale="0 2 2" rotation="0 45 0"></a-entity>
+      <a-obj-model src="#tree1" position="62 -20 357" rotation="0 0 0" scale="10 10 10"></a-obj-model>
+      <a-obj-model src="#tree2" position="-211 -22.5 240" rotation="-90 0 0" scale=".3 .3 .2" color="black"></a-obj-model>
 
-
-      
       <a-light type="ambient" color="#445451"></a-light>
       <a-light type="point" intensity="1" position="2 7 4"></a-light>
     </a-scene>
