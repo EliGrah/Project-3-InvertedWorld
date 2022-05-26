@@ -10,12 +10,15 @@
       <a-assets>
         <a-asset-item id="giraffe" src="./Assets/a-giraffe-figurine-send-a-hug-kiss-in-covid-19-1.snapshot.31/giraffe heart updated-O.obj"></a-asset-item>
         <a-asset-item id="boat" src="./Assets/Boat.obj"></a-asset-item>
+        <a-asset-item id="wolf" src="./Assets/wolf/Wolf-Blender-2.82a.gltf"></a-assets-item>
       </a-assets>
       
       <a-sky src="./Assets/07-Lab-EliGraham-Unreal-360-Lab.png"></a-sky>
       <a-plane src="#boat"></a-plane>
 
-      <a-obj-model src="#giraffe" position="200 15 10"></a-obj-model>
+      <a-obj-model src="#giraffe" position="200 15 200" rotation="0 -30 0"></a-obj-model>
+      <a-entity gltf-model="#wolf" position="7 0 6" scale="0 2 2" rotation="0 45 0"></a-entity>
+
 
       
       <a-light type="ambient" color="#445451"></a-light>
